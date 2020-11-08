@@ -22,14 +22,13 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set nu
 set relativenumber 
 set nowrap 
 set smartcase
 set incsearch
-"set mouse=a
+set mouse=a
 
-set colorcolumn=80
-highlight ColorColum ctermbg=0 guibg=lightgrey
 colorscheme gruvbox
 set background=dark
 
@@ -41,8 +40,8 @@ nnoremap <Leader>i :YcmCompleter GetDoc<cr>
 
 
 "  disable window preview
-"set completeopt-=preview
+set completeopt-=preview
 "  For popup preview 
-"nmap <leader>d <plug>(YCMHover)
+nmap <leader>d <plug>(YCMHover)
 "  disable auto showing of pop on cursor hold
 let g:ycm_auto_hover=''
